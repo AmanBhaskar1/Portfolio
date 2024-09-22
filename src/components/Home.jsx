@@ -11,6 +11,8 @@ const Home = () => {
     const typed = new Typed(el.current, {
       strings: ["Full Stack Developer", "MERN Stack Developer"],
       typeSpeed: 50,
+      loop: true,
+      showCursor: false,
     });
 
     return () => {
@@ -23,7 +25,7 @@ const Home = () => {
       className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800"
     >
       <div className="flex flex-col items-center justify-center h-full max-w-screen-lg mx-auto px-4 md:flex-row">
-        <div className="flex flex-col justify-center w-2/3 h-fit">
+        <div className="flex flex-col justify-center w-2/3 h-fit mt-20">
           <h2 className="text-4xl sm:text-7xl font-bold text-white">
             I'm a <span ref={el} />
           </h2>
